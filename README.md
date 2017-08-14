@@ -18,13 +18,20 @@ Then, just run:
 
 `vagrant up`
 
-This will create and provision the VM. The you need to log in to the VM as root and begin the installation of BOA as this:
+This will create and provision the VM.
+
+The you need to log in to the VM as root and begin the installation of BOA as this:
 
 `ssh root@aegir.local`
-Asign a password for root in order to access the machine later after BOA installation.
+
+Asign a password for root in order to access the machine later after BOA installation:
+
 `root@aegir~# passwd`
-Install BOA
+
+Install BOA:
+
 `root@aegir~# cd;wget -q -U iCab http://files.aegir.cc/BOA.sh.txt;bash BOA.sh.txt`
+
 `root@aegir~# boa in-stable local root@aegir.local mini php-all`
 
 The above lines will install BOA (it takes time) with all supported versions of php, please refer to [Installing BOA system on localhost](https://github.com/omega8cc/boa/blob/a69afd61471b1cefadc80f19b7852c03a48fcf58/docs/INSTALL.txt#L86) to know more/other options
