@@ -7,9 +7,6 @@
 # you're doing.
 Vagrant.configure("2") do |config|
   $pub_key = ""
-  # [IMPORTANT] Enable this after the first vagrant up. See instructions
-  # config.ssh.username = "root"
-  # config.ssh.password = "vagrant"
 
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at

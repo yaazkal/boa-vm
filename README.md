@@ -24,10 +24,6 @@ The you need to log in to the VM as root and begin the installation of BOA as th
 
 `ssh root@aegir.local`
 
-Asign a password for root in order to access the machine later after BOA installation:
-
-`root@aegir~# passwd`
-
 Install BOA:
 
 `root@aegir~# cd;wget -q -U iCab http://files.aegir.cc/BOA.sh.txt;bash BOA.sh.txt`
@@ -39,4 +35,4 @@ The above lines will install BOA (it takes time) with all supported versions of 
 Now you can access your aegir dashboard at http://aegir.local
 Please note that the BOA installer will give you a link at the end of the installation, use that link for a one time access and asign a password. Enjoy the awesomenes of BOA!
 
-*NOTE:* You need to edit the Vagrant file and uncomment `config.ssh.username` and `config.ssh.password` lines in order to vagrant up next time.
+*NOTE:* The next time you use vagrant up, vagrant will try to ssh with user vagrant and that will show errors, this is because the user vagrant will not exist anymore after boa is installed. Ignore those errors and after the VM is running you can still login to it using `ssh root@aegir.local` This will be fixed soon (but is the way this script work by now).
